@@ -5,7 +5,7 @@ import Footer from '../components/Footer.astro';
 
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-const pageTitle = '欢迎来到我的 Astro 网站！';
+const pageTitle = '我的博客';
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
@@ -13,20 +13,26 @@ const pageTitle = '欢迎来到我的 Astro 网站！';
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
     <title>${pageTitle}</title>
   </head>
-
   <body>
     <Header />
 
-    <h1>{pageTitle}</h1>
+    <h1>博客</h1>
+    <p>
+      欢迎来到我的博客！在这里，我将分享我的想法、经验和见解，涵盖各种主题，包括技术、生活、旅行等等。希望你能在这里找到有价值的内容，并与我一起交流和讨论！
+    </p>
+    <p>请随时浏览我的博客文章，并留下你的评论和反馈。我期待与你的互动！</p>
 
-    <h2>……和我的新 Astro 网站！</h2>
+    <ul>
+      <li><a href="/posts/post-1">博客文章 1</a></li>
+      <li><a href="/posts/post-2">博客文章 2</a></li>
+      <li><a href="/posts/post-3">博客文章 3</a></li>
+    </ul>
 
     <Footer />
+
     <script>
       import '../scripts/menu.js';
     </script>
